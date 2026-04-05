@@ -1,246 +1,338 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
-</head>
-<body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Aadhya Pagey | Portfolio&lt;/title&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--bg: #0b0e14;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--card-bg: #161b22;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--accent: #58a6ff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--text: #c9d1d9;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--header: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>* {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--bg);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>overflow-x: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Navigation */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>nav {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5rem 10%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(11, 14, 20, 0.95);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: fixed;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>top: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>z-index: 1000;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #30363d;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.logo {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: 2px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.nav-links {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>list-style: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.nav-links li {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-left: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.nav-links a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 500;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: 0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.nav-links a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Hero Section */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: radial-gradient(circle at center, #1c2128 0%, #0b0e14 100%);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero h1 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 4rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--header);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero h1 span {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 600px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Project Grid */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 5rem 10%;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.section-title {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--header);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 3rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.grid {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.card {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--card-bg);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #30363d;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.3s ease, border-color 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.card:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-10px);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-color: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.card h3 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Button */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px 30px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: transparent;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: 0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--bg);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 3rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid #30363d;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.9rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="logo"&gt;AADHYA.P&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul class="nav-links"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#projects"&gt;Projects&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="mailto:contact@example.com"&gt;Contact&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="home" class="hero"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Hi, I'm &lt;span&gt;Aadhya&lt;/span&gt;&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;A passionate developer creating clean, functional, and user-friendly web applications on Replit.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#projects" class="btn"&gt;View Projects&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="projects" class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title"&gt;My Work&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Portfolio Website&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;A fully responsive personal portfolio built using HTML, CSS, and JS to showcase my technical skills.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Python Automation&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Scripts developed to automate repetitive tasks and improve workflow efficiency.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Web Application&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;An interactive web tool designed to solve real-world problems with a focus on UI/UX.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&amp;copy; 2026 Aadhya Pagey. Created on Replit.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Smooth Scrolling logic</p>
-<p class="p1"><span class="Apple-converted-space">        </span>document.querySelectorAll('a[href^="#"]').forEach(anchor =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>anchor.addEventListener('click', function (e) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>e.preventDefault();</p>
-<p class="p1"><span class="Apple-converted-space">                </span>const target = document.querySelector(this.getAttribute('href'));</p>
-<p class="p1"><span class="Apple-converted-space">                </span>if (target) {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>window.scrollTo({</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>top: target.offsetTop - 70,</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>behavior: 'smooth'</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>});</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>});</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Simple animation trigger on scroll</p>
-<p class="p1"><span class="Apple-converted-space">        </span>window.addEventListener('scroll', () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const cards = document.querySelectorAll('.card');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cards.forEach(card =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>const rect = card.getBoundingClientRect();</p>
-<p class="p1"><span class="Apple-converted-space">                </span>if (rect.top &lt; window.innerHeight - 100) {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>card.style.opacity = '1';</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>});</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>console.log("Aadhya's Portfolio Code successfully merged and loaded.");</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aadhya Pagey | BBA Student – IIM Bangalore</title>
+    <meta
+      name="description"
+      content="Aadhya Pagey – Motivated BBA student specializing in Digital Business and Entrepreneurship at IIM Bangalore."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <div class="container nav-inner">
+        <button class="brand" data-scroll="home">AP</button>
+        <ul class="nav-links">
+          <li><button data-scroll="objective">Objective</button></li>
+          <li><button data-scroll="education">Education</button></li>
+          <li><button data-scroll="experience">Experience</button></li>
+          <li><button data-scroll="skills">Skills</button></li>
+          <li><button data-scroll="hobbies">Hobbies</button></li>
+        </ul>
+        <a class="nav-cta btn btn-solid btn-small" href="mailto:aadhyapagey@gmail.com">Contact Me</a>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-orb orb-top"></div>
+        <div class="hero-orb orb-bottom"></div>
+        <div class="container hero-content">
+          <div class="eyebrow fade-in">BBA · Digital Business & Entrepreneurship</div>
+          <h1 class="hero-title fade-up delay-1">Aadhya</h1>
+          <h1 class="hero-title hero-title-accent fade-up delay-2">Pagey</h1>
+          <p class="hero-copy fade-up delay-3">
+            Motivated student at <em>IIM Bangalore</em>, building expertise in data visualization,
+            entrepreneurship, and analytical leadership.
+          </p>
+
+          <div class="hero-pills fade-up delay-4">
+            <a class="pill" href="mailto:aadhyapagey@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="M22 7 13.03 12.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              aadhyapagey@gmail.com
+            </a>
+            <a class="pill" href="tel:7666683008">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.4 2 2 0 0 1 3.6 2.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.07 6.07l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              +91 7666683008
+            </a>
+          </div>
+
+          <div class="hero-actions fade-up delay-5">
+            <button class="btn btn-solid" data-scroll="education">View My Journey</button>
+            <a class="btn btn-outline" href="mailto:aadhyapagey@gmail.com?subject=Resume Inquiry – Aadhya Pagey"
+              >Get In Touch</a
+            >
+          </div>
+
+          <button class="scroll-indicator fade-in delay-7" data-scroll="objective" aria-label="Scroll to objective">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 5v14M5 12l7 7 7-7"></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <div class="container page-sections">
+        <section id="objective" class="section reveal">
+          <div class="section-heading">
+            <span></span>
+            <p>✦ Career Objective ✦</p>
+            <span></span>
+          </div>
+          <div class="card objective-card">
+            <div class="objective-accent"></div>
+            <p>
+              "Motivated BBA student specializing in Digital Business and Entrepreneurship at IIM
+              Bangalore, eager to apply strong analytical, communication, and leadership skills in
+              a dynamic business environment. Currently developing expertise in data visualization
+              with Power BI to support informed decision-making and innovative solutions."
+            </p>
+          </div>
+        </section>
+
+        <section id="education" class="section reveal">
+          <div class="section-heading">
+            <span></span>
+            <p>✦ Education ✦</p>
+            <span></span>
+          </div>
+          <div class="stack">
+            <article class="card hover-card">
+              <div class="row between top">
+                <div>
+                  <h3>Bachelor of Business Administration (BBA)</h3>
+                  <p class="subhead">IIM Bangalore</p>
+                </div>
+                <span class="badge">Expected 2028</span>
+              </div>
+              <p class="meta">
+                Specialization: <strong>Digital Business &amp; Entrepreneurship</strong>
+              </p>
+              <div class="tags">
+                <span>Digital Business</span>
+                <span>Entrepreneurship</span>
+                <span>Analytics</span>
+              </div>
+            </article>
+
+            <article class="card hover-card compact-score">
+              <div>
+                <h3>12th Grade</h3>
+                <p class="meta">Spring Dales Jr. College, Aurangabad</p>
+              </div>
+              <div class="score">
+                <strong>64%</strong>
+                <span>Percentage</span>
+              </div>
+            </article>
+
+            <article class="card hover-card compact-score">
+              <div>
+                <h3>10th Grade</h3>
+                <p class="meta">Cambridge School, Aurangabad</p>
+              </div>
+              <div class="score">
+                <strong>71.8%</strong>
+                <span>Percentage</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="experience" class="section reveal">
+          <div class="section-heading">
+            <span></span>
+            <p>✦ Experience &amp; Activities ✦</p>
+            <span></span>
+          </div>
+          <article class="card hover-card experience-card">
+            <div class="experience-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </div>
+            <div class="experience-copy">
+              <div class="row between top">
+                <div>
+                  <h3>Delegate – IIMUN</h3>
+                  <p class="subhead">India's International Movement to Unite Nations Conference</p>
+                </div>
+                <span class="badge">Conference</span>
+              </div>
+              <ul class="feature-list">
+                <li>
+                  Participated as a delegate in debates and negotiations, enhancing public
+                  speaking, diplomacy, and teamwork skills.
+                </li>
+                <li>
+                  Collaborated with peers to draft resolutions and present ideas effectively in a
+                  high-pressure international conference setting.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </section>
+
+        <section id="skills" class="section reveal">
+          <div class="section-heading">
+            <span></span>
+            <p>✦ Skills ✦</p>
+            <span></span>
+          </div>
+          <div class="skills-grid">
+            <article class="card skills-card">
+              <h3 class="small-title">Core Competencies</h3>
+              <div class="skill-list">
+                <div class="skill-item" data-level="90">
+                  <div class="skill-meta"><span>Communication</span><strong>90%</strong></div>
+                  <div class="skill-bar"><span></span></div>
+                </div>
+                <div class="skill-item" data-level="88">
+                  <div class="skill-meta"><span>Teamwork</span><strong>88%</strong></div>
+                  <div class="skill-bar"><span></span></div>
+                </div>
+                <div class="skill-item" data-level="82">
+                  <div class="skill-meta"><span>Leadership</span><strong>82%</strong></div>
+                  <div class="skill-bar"><span></span></div>
+                </div>
+                <div class="skill-item" data-level="85">
+                  <div class="skill-meta"><span>Active Listening</span><strong>85%</strong></div>
+                  <div class="skill-bar"><span></span></div>
+                </div>
+                <div class="skill-item" data-level="78">
+                  <div class="skill-meta"><span>Microsoft Excel</span><strong>78%</strong></div>
+                  <div class="skill-bar"><span></span></div>
+                </div>
+                <div class="skill-item" data-level="84">
+                  <div class="skill-meta"><span>Problem-Solving</span><strong>84%</strong></div>
+                  <div class="skill-bar"><span></span></div>
+                </div>
+                <div class="skill-item" data-level="86">
+                  <div class="skill-meta"><span>Critical Thinking</span><strong>86%</strong></div>
+                  <div class="skill-bar"><span></span></div>
+                </div>
+                <div class="skill-item" data-level="88">
+                  <div class="skill-meta"><span>Adaptability</span><strong>88%</strong></div>
+                  <div class="skill-bar"><span></span></div>
+                </div>
+                <div class="skill-item" data-level="80">
+                  <div class="skill-meta"><span>Public Speaking</span><strong>80%</strong></div>
+                  <div class="skill-bar"><span></span></div>
+                </div>
+                <div class="skill-item" data-level="76">
+                  <div class="skill-meta"><span>Networking</span><strong>76%</strong></div>
+                  <div class="skill-bar"><span></span></div>
+                </div>
+              </div>
+            </article>
+
+            <div class="side-stack">
+              <article class="learning-card hover-card">
+                <div class="learning-label">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 20h9"></path>
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                  </svg>
+                  Currently Learning
+                </div>
+                <h3>Power BI</h3>
+                <p>
+                  Data Visualization &amp; Analytics — building dashboards and deriving business
+                  insights from complex datasets.
+                </p>
+                <div class="tags light-tags">
+                  <span>In Progress</span>
+                  <span>Data Analytics</span>
+                </div>
+              </article>
+
+              <article class="card">
+                <h3 class="small-title">Key Strengths</h3>
+                <div class="tags green-tags">
+                  <span>Leadership</span>
+                  <span>Public Speaking</span>
+                  <span>Diplomacy</span>
+                  <span>Teamwork</span>
+                  <span>Adaptability</span>
+                  <span>Networking</span>
+                  <span>Problem-Solving</span>
+                  <span>Critical Thinking</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="hobbies" class="section reveal">
+          <div class="section-heading">
+            <span></span>
+            <p>✦ Hobbies &amp; Interests ✦</p>
+            <span></span>
+          </div>
+          <div class="interest-grid">
+            <article class="card hover-card">
+              <div class="interest-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <h3>Reading Blogs &amp; Novels</h3>
+              <p>
+                An avid reader who finds inspiration in both fiction and non-fiction — from
+                contemporary novels to thought-provoking digital content and business blogs.
+              </p>
+            </article>
+
+            <article class="card hover-card">
+              <div class="interest-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  <path d="M2 12h20"></path>
+                </svg>
+              </div>
+              <h3>Digital Trends &amp; Entrepreneurship</h3>
+              <p>
+                Passionate about exploring emerging technologies, startup ecosystems, and the
+                intersection of digital innovation with real-world business challenges.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta-section reveal">
+          <div class="cta-card">
+            <div class="cta-orb cta-orb-right"></div>
+            <div class="cta-orb cta-orb-left"></div>
+            <div class="cta-copy">
+              <p>Open to Opportunities</p>
+              <h2>Let's Connect</h2>
+              <span>
+                Whether it's an internship, collaboration, or just a conversation about business
+                and technology — I'd love to hear from you.
+              </span>
+              <div class="hero-actions">
+                <a class="btn btn-light" href="mailto:aadhyapagey@gmail.com">Send an Email</a>
+                <a class="btn btn-ghost" href="tel:7666683008">Call Me</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 <strong>Aadhya Pagey</strong> · BBA – IIM Bangalore · Digital Business &amp; Entrepreneurship</p>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
